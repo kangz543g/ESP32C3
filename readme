@@ -55,3 +55,16 @@ for projects requiring significant memory space and fast data access.
 This combination of ESP32-C3 with PSRAM and W25Q128 provides a powerful, flexible, and scalable
  solution for a wide range of IoT applications, particularly those requiring wireless 
  communication, local data processing, and large data storage.
+
+
+How to use
+Ensure the SPI PSRAM chip pins are properly connected with your MCU board. E.g the PSRAM is 
+connected with below GPIOs of ESP32C3, and don't forget VCC and GND pins:
+
+CS1:  GPIO9  // PSRAM64H(8MB)
+CS2:  GPIO10 // W25Q128(16MB)
+MOSI: GPIO6    
+MISO: GPIO5
+SCLK: GPIO4
+
+
